@@ -22,7 +22,7 @@ const newCycleFormValidationSchema = zod.object({
 type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
 
 interface Cycle {
-  id: number
+  id: string
   task: string
   minutesAmount: number
 }
